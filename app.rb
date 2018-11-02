@@ -29,14 +29,20 @@ class App < Sinatra::Base
     # multiplies two numbers together
     # divides the first number by the second number
     <% case params[:operation] %>
-    <% when add %>
-    <% when %>
-    <% when %>
-    <% when %>
-    add      = params[:number1] + params[:number2]
-    subtract = params[:number1] + params[:number2]
-    multiply = params[:number1] * params[:number2]
-    divide   = params[:number1] / params[:number2]
+    <% when "add" %>
+        params[:number1] + params[:number2]
+    <% when "subtract"%>
+        params[:number1] + params[:number2]
+    <% when "multiply"%>
+        params[:number1] * params[:number2]
+    <% when "divide"%>
+        divide   = params[:number1] / params[:number2]
+    <% end %>
+    
+    # add      = params[:number1] + params[:number2]
+    # subtract = params[:number1] + params[:number2]
+    # multiply = params[:number1] * params[:number2]
+    # divide   = params[:number1] / params[:number2]
   end 
 
 end
