@@ -30,13 +30,13 @@ class App < Sinatra::Base
     # divides the first number by the second number
     case params[:operation] 
     when "add" 
-        params[:number1] + params[:number2]
+        params[:number1].to_i + params[:number2].to_i
     when "subtract"
-        params[:number1] + params[:number2]
+        params[:number1].to_i + params[:number2].to_i
     when "multiply"
-        params[:number1] * params[:number2]
+        params[:number1].to_i * params[:number2].to_i
     when "divide"
-        divide   = params[:number1] / params[:number2]
+        divide   = params[:number1].to_i / params[:number2].to_i
     end 
     
     # add      = params[:number1] + params[:number2]
