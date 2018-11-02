@@ -20,30 +20,15 @@ class App < Sinatra::Base
   end 
   
   get '/say/:word1/:word2/:word3/:word4/:word5' do 
-    # sends a 200 status code
-    # concatenates the words and adds a period
-    # isn't hard-coded
-    
-    # params[:word1]
-    # params[:word2]
-    # params[:word3]
-    # params[:word4]
-    # params[:word5]
-    
-    # <% params.each do |k,v| %>
-    #   v
-    # <% end %>
-    
     "#{params.values.join(" ")}."
   end 
   
-  
-  # get '/:operation/:number1/:number2' do 
-  #   # adds two numbers together
-  #   # subtracts the second number from the first
-  #   # multiplies two numbers together
-  #   # divides the first number by the second number
-  # end 
+  get '/:operation/:number1/:number2' do 
+    # adds two numbers together
+    # subtracts the second number from the first
+    # multiplies two numbers together
+    # divides the first number by the second number
+  end 
 
 end
 
