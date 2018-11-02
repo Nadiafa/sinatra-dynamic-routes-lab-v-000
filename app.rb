@@ -37,7 +37,7 @@ class App < Sinatra::Base
     divide   = params[:number1].to_i / params[:number2].to_i
     case params[:operation] 
     when "add" 
-        add
+        "#{add}"
     when "subtract"
         subtract
     when "multiply"
