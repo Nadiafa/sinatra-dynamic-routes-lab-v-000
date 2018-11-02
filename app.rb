@@ -28,6 +28,10 @@ class App < Sinatra::Base
     # subtracts the second number from the first
     # multiplies two numbers together
     # divides the first number by the second number
+    
+    # num1 = params[:number1].to_i
+    # num2 = params[:number2].to_i
+    
     case params[:operation] 
     when "add" 
         params[:number1].to_i + params[:number2].to_i
@@ -36,7 +40,7 @@ class App < Sinatra::Base
     when "multiply"
         params[:number1].to_i * params[:number2].to_i
     when "divide"
-        divide   = params[:number1].to_i / params[:number2].to_i
+        params[:number1].to_i / params[:number2].to_i
     end 
     
     # add      = params[:number1] + params[:number2]
