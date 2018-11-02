@@ -29,13 +29,13 @@ class App < Sinatra::Base
     # multiplies two numbers together
     # divides the first number by the second number
     
-      num1 = params[:number1].to_i
+    num1 = params[:number1].to_i
     num2 = params[:number2].to_i
     
-    add      = params[:number1].to_i + params[:number2].to_i
-    subtract = params[:number1].to_i - params[:number2].to_i
-    multiply = params[:number1].to_i * params[:number2].to_i
-    divide   = params[:number1].to_i / params[:number2].to_i
+    add      = num1 + num2
+    subtract = num1 - num2
+    multiply = num1 * num2
+    divide   = num1 / num2
     if params[:operation] == "add" 
         "#{add}"
     elsif params[:operation] == "subtract"
