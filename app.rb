@@ -29,19 +29,37 @@ class App < Sinatra::Base
     # multiplies two numbers together
     # divides the first number by the second number
     
-    num1 = params[:number1].to_i
-    num2 = params[:number2].to_i
     
+    
+    add      = params[:number1].to_i + params[:number2].to_i
+    subtract = params[:number1].to_i - params[:number2].to_i
+    multiply = params[:number1].to_i * params[:number2].to_i
+    divide   = params[:number1].to_i / params[:number2].to_i
     case params[:operation] 
     when "add" 
-        num1 + num2
+        add
     when "subtract"
-        num1 - num2
+        subtract
     when "multiply"
-        num1 * num2
+        multiply
     when "divide"
-        num1 / num2
-    end 
+        divide
+    end
+    
+    
+    # num1 = params[:number1].to_i
+    # num2 = params[:number2].to_i
+    
+    # case params[:operation] 
+    # when "add" 
+    #     num1 + num2
+    # when "subtract"
+    #     num1 - num2
+    # when "multiply"
+    #     num1 * num2
+    # when "divide"
+    #     num1 / num2
+    # end 
     
     # add      = params[:number1] + params[:number2]
     # subtract = params[:number1] + params[:number2]
