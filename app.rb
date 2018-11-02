@@ -31,12 +31,12 @@ class App < Sinatra::Base
     
     
     
-    add      = params[:number1].to_i + params[:number2].to_i
+    # add      = params[:number1].to_i + params[:number2].to_i
     subtract = params[:number1].to_i - params[:number2].to_i
     multiply = params[:number1].to_i * params[:number2].to_i
     divide   = params[:number1].to_i / params[:number2].to_i
     if params[:operation] == "add" 
-        add
+        params[:number1].to_i + params[:number2].to_i
     elsif params[:operation] == "subtract"
         #{subtract}
     elsif params[:operation] == "multiply"
