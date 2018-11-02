@@ -39,11 +39,11 @@ class App < Sinatra::Base
     when "add" 
         "#{add}"
     when "subtract"
-        subtract
+        #{subtract}
     when "multiply"
-        multiply
+        #{multiply}
     when "divide"
-        divide
+        #{divide}
     end
     
     
