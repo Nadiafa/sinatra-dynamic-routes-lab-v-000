@@ -24,11 +24,6 @@ class App < Sinatra::Base
   end 
   
   get '/:operation/:number1/:number2' do 
-    # adds two numbers together
-    # subtracts the second number from the first
-    # multiplies two numbers together
-    # divides the first number by the second number
-    
     num1 = params[:number1].to_i
     num2 = params[:number2].to_i
     
@@ -45,26 +40,6 @@ class App < Sinatra::Base
     elsif params[:operation] == "divide"
         "#{divide}"
     end
-    
-    
-    # num1 = params[:number1].to_i
-    # num2 = params[:number2].to_i
-    
-    # case params[:operation] 
-    # when "add" 
-    #     num1 + num2
-    # when "subtract"
-    #     num1 - num2
-    # when "multiply"
-    #     num1 * num2
-    # when "divide"
-    #     num1 / num2
-    # end 
-    
-    # add      = params[:number1] + params[:number2]
-    # subtract = params[:number1] + params[:number2]
-    # multiply = params[:number1] * params[:number2]
-    # divide   = params[:number1] / params[:number2]
   end 
 
 end
