@@ -34,7 +34,7 @@ class App < Sinatra::Base
     #   v
     # <% end %>
     
-    params.values.join(".").join(" ")
+    params.values.join(" ")
   end 
   
   
