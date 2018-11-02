@@ -35,14 +35,13 @@ class App < Sinatra::Base
     subtract = params[:number1].to_i - params[:number2].to_i
     multiply = params[:number1].to_i * params[:number2].to_i
     divide   = params[:number1].to_i / params[:number2].to_i
-    case params[:operation] 
-    when "add" 
+    if params[:operation] == "add" 
         "#{add}"
-    when "subtract"
+    elsif params[:operation] == "subtract"
         #{subtract}
-    when "multiply"
+    elsif params[:operation] == "multiply"
         #{multiply}
-    when "divide"
+    elsif params[:operation] == "divide"
         #{divide}
     end
     
