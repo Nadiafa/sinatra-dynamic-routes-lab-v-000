@@ -34,7 +34,7 @@ class App < Sinatra::Base
     #   v
     # <% end %>
     
-    params.value
+    params.values
   end 
   
   
