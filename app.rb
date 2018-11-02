@@ -29,7 +29,8 @@ class App < Sinatra::Base
     # multiplies two numbers together
     # divides the first number by the second number
     
-    
+      num1 = params[:number1].to_i
+    num2 = params[:number2].to_i
     
     # add      = params[:number1].to_i + params[:number2].to_i
     subtract = params[:number1].to_i - params[:number2].to_i
